@@ -1,11 +1,33 @@
-for (let i = 1; i <= 13; i++) {
-    if (i % 3 == 0) {
-        console.log('fizz');
-     } else if (i % 5 == 0) {
-         console.log('Buzz');
-     } else if (i % 5 == 0 && i % 3 == 0) {
-         console.log('FizzBuzz');
-     } else{
-         console.log(i);
-     }
- }
+function Fizzbuzz(n) {
+    for (let i = 1; i <= n; i++) {
+        if  (i % 5 == 0 && i % 3 == 0){
+            console.log('FizzBuzz');
+        } else if (i % 3 == 0) {
+            console.log('fizz');
+        } else if (i % 5 == 0) {
+            console.log('Buzz');
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+
+//  Требуется написать функцию, выводящую в консоль числа от 1 до n, где n — это целое число, 
+// которая функция принимает в качестве параметра, с такими условиями:
+
+//  вывод fizz вместо чисел, кратных 3;
+//  вывод buzz вместо чисел, кратных 5;
+//  вывод fizzbuzz вместо чисел, кратных как 3, так и 5.
+
+//  Пример
+
+//  Fizzbuzz(5)
+
+//  Результат
+
+//  1
+//  2
+//  fizz
+//  4
+//  buzz
